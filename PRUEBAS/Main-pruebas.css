@@ -1,0 +1,568 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+html {   
+    text-decoration: none;
+    font-family:serif;
+    background-color:#888;
+}
+
+img {
+    width:30%;
+    height:20vmax;
+}
+
+/* tradicions */
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    position: relative;
+    margin-top:1vh;
+    margin-left: 25%;
+    width:50%;
+    height:50vh;
+    background-color:#fff;
+    border-radius: 4vmax / 4vmax;
+}
+
+.card-1:hover,
+.card-2:hover,
+.card-3:hover,
+.card-4:hover {
+    transform: scale(1.5);
+}
+
+.caja-img-1 {
+    width:100%;
+    height:50vh; 
+    grid-column: 1 / 3;
+    grid-row: 1 / 5;
+    border-radius:2vmax / 2vmax;
+}
+
+.caja-img-1 img {
+    width:100%;
+    height:50vh;
+    grid-column: 1 / 3;
+    grid-row: 1 / 4;
+    border-radius:4vmax 0vmax 0vmax 4vmax;
+}
+
+.caja-title-1 {
+    width:100%;
+    height:50vh;
+    display: flex;
+    grid-column: 3 / 5;
+    grid-row:1 / 5;
+    border-radius:4vmax / 4vmax;
+}
+
+.caja-title-1 h3 {
+    position: absolute;
+    top: 2vw;
+    left: 1vw;
+    font-size: 3vw;
+    color: rgb(206, 76, 117);
+    grid-column: 3 / 5;
+    grid-row:1 / 2;
+    text-align: center;
+}
+
+.caja-title-1  p {
+    position: absolute;
+    top: 1vw;
+    font-weight:600;
+    line-height: 3ch;
+    font-size: 2.5vh;
+    text-align: center;
+    grid-column: 3 / 5;
+    grid-row:2 / 5;
+}
+
+
+
+.caja-img-2 {
+    width:100%;
+    height:50vh;
+    grid-column: 3 / 5;
+    grid-row: 1 / 5;
+    border-radius:2vmax / 2vmax;
+}
+.caja-img-2 img {
+    width:100%;
+    height:50vh;
+    grid-column: 3 / 5;
+    grid-row: 1 / 5;
+    border-radius:0vmax 4vmax 4vmax 0vmax;
+}
+
+.caja-title-2 {
+    width:100%;
+    height:50vh;
+    display: flex;
+    grid-column: 1 / 3;
+    grid-row:1 / 5;
+    border-radius:4vmax / 4vmax;
+}
+
+.caja-title-2 h3 {
+    position: absolute;
+    top: 1vh;
+    font-size: 3vw;
+    grid-column: 1 / 3;
+    grid-row:1 / 2;
+    text-align: center;
+}
+
+.caja-title-2 p {
+    position: absolute;
+    top: 1vw;
+    font-weight:600;
+    line-height: 3ch;
+    font-size: 2.5vh;
+    color: rgb(206, 76, 117);
+    text-align: center;
+    grid-column: 1 / 3;
+    grid-row:2 / 5;
+}
+
+
+
+.caja-img-3 {
+    width:100%;
+    height:50vh;
+    grid-column: 1 / 3;
+    grid-row: 1 / 5;
+    border-radius:2vmax / 2vmax;
+}
+.caja-img-3 img {
+    width:100%;
+    height:50vh;
+    grid-column: 1 / 3;
+    grid-row: 1 / 5;
+    border-radius:4vmax 0vmax 0vmax 4vmax;
+}
+
+.caja-title-3 {
+    width:100%;
+    height:50vh;
+    display: flex;
+    grid-column: 3 / 5;
+    grid-row:1 / 5;
+    border-radius:4vmax / 4vmax;
+}
+
+.caja-title-3 h3 {
+    position: absolute;
+    top: 2vw;
+    left: 2vw;
+    color: rgb(206, 76, 117);
+    font-size: 3vw;
+    grid-column: 3 / 5;
+    grid-row:1 / 2;
+    text-align: center;
+}
+
+.caja-title-3 p {
+    position: absolute;
+    top: 1vw;
+    font-weight:600;
+    line-height: 3ch;
+    font-size: 2.5vh;
+    text-align: center;
+    grid-column: 3 / 5;
+    grid-row:2 / 5;
+}
+
+
+.caja-img-4 {
+    width:100%;
+    height:50vh;
+    grid-column: 3 / 5;
+    grid-row: 1 / 5;
+    border-radius:2vmax / 2vmax;
+}
+.caja-img-4 img {
+    width:100%;
+    height:50vh;
+    grid-column: 3 / 5;
+    grid-row: 1 / 5;
+    border-radius:0vmax 4vmax 4vmax 0vmax;
+}
+
+.caja-title-4 {
+    width:100%;
+    height:50vh;
+    display: flex;
+    grid-column: 1 / 3;
+    grid-row:1 / 5;
+    border-radius:4vmax / 4vmax;
+}
+
+.caja-title-4 h3 {
+    position: absolute;
+    top: 2vw;
+    left: 1vw;
+    font-size: 3vw;
+    grid-column: 1 / 3;
+    grid-row:1 / 2;
+    text-align: center;
+}
+
+.caja-title-4 p {
+    position: absolute;
+    top: 1vw;
+    font-weight:600;
+    line-height: 3ch;
+    font-size: 2.5vh;
+    text-align: center;
+    color: rgb(206, 76, 117);
+    grid-column: 1 / 3;
+    grid-row: 2 / 5;
+}
+
+.hero-1 {
+    width: 50%;
+    height: 50vh;
+    background-color: black;
+    background-image: url(/Img-proyecto/empanadas-t.jpg);
+    background-repeat: no-repeat;
+    background-position:0 -200px ;
+    opacity: 0.8;
+    filter: contrast(80%);  
+}
+
+.hero-1 > * {
+    margin-top:5vh;
+    color: #fff;
+    font-weight: 800;
+    text-align: center;
+    font-size: 5vmin;
+    display: flex;
+    justify-content:center;
+}
+
+.hero-2 {
+    width: 50%;
+    height: 50vh;
+    background-color: rgb(0, 0, 0);
+    background-image: url(/Img-proyecto/charquisillo-t.jpg);
+    background-repeat: no-repeat;
+    background-position:-50px -150px;
+    opacity: 0.8;
+    filter: contrast(80%);  
+}
+
+.hero-2 > * {
+    margin-top:6vh;  
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    text-align: center;
+    font-size: 5vmin;
+    display: flex;
+    justify-content:center;
+}
+
+.hero-3 {
+    width: 50%;
+    height: 50vh;
+    background-color: rgb(0, 0, 0);
+    background-image: url(/Img-proyecto/humitas-t.jpg);
+    background-repeat: no-repeat;
+    background-position:-150px -150px;
+    opacity: 0.8;
+    filter: contrast(80%); 
+}
+
+.hero-3 > * {
+    margin-top:6vh;  
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    text-align: center;
+    font-size: 5vmin;
+    display: flex;
+    justify-content:center;
+}
+
+.hero-4 {
+    width: 50%;
+    height: 50vh;
+    background-color: rgb(0, 0, 0);
+    background-image: url(/Img-proyecto/locro-t.png);
+    background-repeat: no-repeat;
+    background-position:-150px -150px;
+    opacity: 0.8;
+    filter: contrast(80%); 
+}
+
+.hero-4 > * {
+    margin-top:6vh;  
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    text-align: center;
+    font-size: 5vmin;
+    display: flex;
+    justify-content:center;
+}
+
+.card-ingredient {
+    margin-top: 2vh;
+    border:thick solid rgb(84, 84, 84);
+    background-color:rgb(206, 76, 117);  
+    color: white;
+    width: 50%;
+}
+
+.card-ingredient:hover,
+.card-prepare:hover {
+    transition: all 200ms ease-in-out 200ms;
+    transform: scale(1.1);
+}
+
+
+.card-ingredient summary {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.card-ingredient ul {
+    list-style: circle;
+    margin-left: 10%;
+    border-top: thin solid black;
+}
+
+.card-ingredient li {
+    border-bottom: thin solid black;
+}
+
+.card-prepare {
+    margin-top: 2vh;
+    border:thick solid rgb(206, 76, 117);
+    background-color:rgb(84, 84, 84);  
+    color: white;
+    width: 50%;
+}
+
+.card-prepare summary {
+    list-style:none;
+    display: flex;
+    justify-content:center;
+}
+
+.card-prepare dt {
+    margin-left: 10%;
+}
+
+.card-prepare dd {
+    margin-left: 10%;
+    border-top: thin solid black;
+}
+
+
+
+
+/* historia */
+.menu-h {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    position: relative;
+    left: 25%;
+    background-color: black;
+    min-width:40%;
+    max-width:50%;
+    height:30vh;
+    max-height:40vh ;
+    outline: 5px solid orange;
+}
+
+.menu-h ul {
+    color: orange;
+    list-style:lower-roman;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menu-h li {
+    margin-top: 1vmin;
+}
+
+.menu-h a {
+    color: orange;
+    text-decoration: none;
+    font-size:3vmin;
+}
+
+.menu-h a:hover,
+.menu-h li:hover {
+    color: rgb(194, 114, 43);
+}
+
+.div-c {
+    width:50vw;
+    height:30vh;
+    margin-left: 25%;
+}
+
+.card-body-1 {
+    background-color: black;
+    color: orange;
+}
+
+.card-body-2 {
+    background-color:orange;
+    color: black;
+}
+
+.container-iframe {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-iframe iframe {
+    width: 50%;
+    height: 60vh;
+} 
+
+
+
+/* geograpy */
+.img-g {
+    width: 100%;
+    height: 100%;
+}
+
+.departamentos * p {
+    color: #f1b1cd;
+}
+
+.content-dep {
+    margin-top: 5vh;
+    background:linear-gradient(60deg, #48172d 0% 20%, #000 40% 60%, #48172d 80%);
+}
+
+.content-dep * h2 {
+    color: #7d2a4e;
+}
+
+
+.image-rombo-a,
+.image-rombo-b,
+.image-rombo-c,
+.image-rombo-d {
+    margin-top:15vh;
+    width:25vmax;
+    height:25vmax;
+    border: thick solid #870053;
+}
+
+.image-rombo-a {
+    background-image: url(/Img-proyecto/cuesta-del-obispo-g.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(45deg);
+}
+
+.image-rombo-b {
+    background-image: url(/Img-proyecto/tren-a-las-nubes-g.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(45deg);
+}
+
+.image-rombo-c {
+    background-image: url(/Img-proyecto/Garganta-del-diablo-g.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(-45deg);
+}
+
+.image-rombo-d {
+    background-image: url(/Img-proyecto/parque-los-cardones-g.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(45deg);
+}
+
+.info-rombo {
+    margin-top:15vh;
+    width:30vmax;
+    height:30vmax;
+    border: thick solid #7d2a4e;
+    transform: rotate(45deg);
+    margin-left: 25%;
+}
+.info-rombo h3 {
+    transform: rotate(-45deg);
+    font-size:2.5vmax ;
+    margin-right: 50%;
+    margin-top: 5%;
+    color: #48172d;
+}
+
+.info-rombo p {
+    margin-right: 5%;
+    font-size:1.3vmax ;
+    transform: rotate(-45deg);
+}
+
+
+
+/* Economy*/
+.img-economia {
+    position: relative;
+    left:35%;
+}
+
+
+.table-line {
+    border-bottom:1px solid black;
+
+}
+
+.table-line-right {
+    border-right:1px solid black;
+}
+
+.tbody-1 tr:nth-child(1), .tbody-1 tr:nth-child(3), .tbody-1 tr:nth-child(4), .tbody-1 tr:nth-child(6),.tbody-1 tr:nth-child(7),.tbody-1 tr:nth-child(8),.tbody-1 tr:nth-child(12),.tbody-1 tr:nth-child(13),.tbody-1 tr:nth-child(16),.tbody-1 tr:nth-child(17),.tbody-1 tr:nth-child(18),.tbody-1 tr:nth-child(21), .tbody-1 tr:nth-child(22), .tbody-2 tr:nth-child(2),.tbody-2 tr:nth-child(4),.tbody-2 tr:nth-child(7), .tbody-2 tr:nth-child(9),.tbody-2 tr:nth-child(11),.tbody-2 tr:nth-child(12),.tbody-2 tr:nth-child(14) {
+    animation:tbody-1 4s ease-out 2s infinite;
+}
+
+@keyframes tbody-1 {
+    0% {
+        color: green;
+    }
+    50% {
+        color: red;
+    }
+    100% {
+        color: green;
+    }
+}
+
+.tbody-1 tr:nth-child(2), .tbody-1 tr:nth-child(5), .tbody-1 tr:nth-child(9),.tbody-1 tr:nth-child(10), .tbody-1 tr:nth-child(11),.tbody-1 tr:nth-child(14),.tbody-1 tr:nth-child(15), .tbody-1 tr:nth-child(19), .tbody-1 tr:nth-child(20), .tbody-2 tr:nth-child(1), .tbody-2 tr:nth-child(3), .tbody-2 tr:nth-child(5), .tbody-2 tr:nth-child(6), .tbody-2 tr:nth-child(8),.tbody-2 tr:nth-child(10),.tbody-2 tr:nth-child(13) {
+    animation:tbody-2 4s ease-out 2s infinite;
+}
+
+@keyframes tbody-2 {
+    0% {
+        color: red;
+    }
+    50% {
+        color: green;
+    }
+    100% {
+        color: red;
+    }
+}
