@@ -1,0 +1,140 @@
+
+.header-P {   
+    background-color: rgb(58, 58, 58);
+    width: 100%;
+    height: 40vmin;
+}
+
+
+.nav-enter {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+}
+
+
+.nav-enter ul li {
+    display: inline-block;
+    clip-path: polygon(88% 30%, 100% 50%, 88% 71%, 15% 71%, 0 50%, 15% 30%);
+    padding: 1.5vmax;
+    background-color: #de5166;
+    font-size: 2.5vw;
+    margin: 1vw 5vw 1vw 5vw;
+}
+
+.nav-enter a {
+    color: #efadc9;
+    text-decoration: none;
+}
+.nav-enter a:hover {
+    color: #efadc9;
+}
+
+.nav-enter li:hover,
+.nav-enter li:focus {
+    background-color: #be7889;
+    transform:skew(20deg);
+}
+
+.container-img {
+    position: relative;
+    width: 100%;
+    height:30vmax;
+}
+
+.container-img img {
+    display:inline-block;
+    margin:2.5vw 0vw 0vw 0vw;
+    width:15vmax;
+    height:$size-vmi1;
+}
+
+.container-title {
+    position: absolute;
+    top: 4vmax;
+    left: 20vmax;
+    width: 100%;
+    height:30vh;
+}
+
+.container-title h1 {
+    display: inline-block;
+    color: #690c32;
+    margin: 0vw 0vw 2.5vh 5.5vw;
+    font-size:8vmax;
+    text-align: center;
+}
+
+.menu-label {
+    width: 5vmax;
+    height: 5vmax;
+
+}
+
+.menu-img {
+    width: 5vmax;
+    height: 5vmax;
+    background-color: rgb(209, 109, 124);
+}
+
+.menu-label, .menu-input {
+    display: none;
+}
+
+
+
+
+
+
+.head-h, .head-g, .head-e, .head-t {
+    width: 100%;
+    height: 30vh;
+    background-color:$Cblack;
+    z-index: 1000;
+}
+
+/* contenedores */
+.container-h, .container-g, .container-e, .container-t {
+    width: 100%;
+    height: 30vh;
+}
+
+ /* titulos */
+.title-h, .title-g, .title-e, .title-t {
+    color: $Cwhite;
+    opacity:1;
+    font-size: 8vmax ;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left:25%;
+    top: 5%;
+    z-index: 1000;
+}
+
+ /*Botones volver  */
+.container-after-h, .container-after-g, .container-after-e, .container-after-t {
+    position: relative;
+    bottom: 100%;
+    width: 20vw;
+    height: 20vh;
+}
+
+.container-after-h, .container-after-g, .container-after-e, .container-after-t {
+    img {
+    width: 15vmax;
+    height: 15vmax; 
+    margin-top: 1vh;
+    }
+
+}
+
+.container-after-h, .container-after-g, .container-after-e , .container-after-t {
+    img:hover {
+        filter:contrast(80%);
+    }
+}
+
+

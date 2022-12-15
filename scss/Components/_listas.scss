@@ -1,0 +1,105 @@
+// Principal
+.main details {
+    margin:5%;
+    border:thick dashed #e04564;
+    background-color: #be7889;
+}
+
+.main details:hover {
+    background:linear-gradient(50deg,#e04564, #be7889, #e04564);
+    cursor: pointer;
+}
+
+.main summary, .main ul{
+    list-style: none;
+}
+
+
+// history
+.menu-h {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    position: relative;
+    left: 25%;
+    background-color: black;
+    min-width:40%;
+    max-width:50%;
+    height:30vh;
+    max-height:40vh ;
+    outline: 5px solid orange;
+}
+.menu-h ul {
+    color: orange;
+    list-style:lower-roman;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.menu-h li {
+    margin-top: 1vmin;
+}
+.menu-h a {
+    color: orange;
+    text-decoration: none;
+    font-size:3vmin;
+}
+.menu-h a:hover,
+.menu-h li:hover {
+    color: rgb(194, 114, 43);
+}
+
+// tradition
+
+.card-ingredient {
+    margin-top: 2vh;
+    border:thick solid rgb(84, 84, 84);
+    background-color:rgb(206, 76, 117);  
+    color: white;
+    width: 50%;
+}
+
+.card-ingredient:hover,
+.card-prepare:hover {
+    transition: all 200ms ease-in-out 200ms;
+    transform: scale(1.1);
+}
+
+
+.card-ingredient summary {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.card-ingredient ul {
+    list-style: circle;
+    margin-left: 10%;
+    border-top: thin solid black;
+}
+
+.card-ingredient li {
+    border-bottom: thin solid black;
+}
+
+.card-prepare {
+    margin-top: 2vh;
+    border:thick solid rgb(206, 76, 117);
+    background-color:rgb(84, 84, 84);  
+    color: white;
+    width: 50%;
+}
+
+.card-prepare summary {
+    list-style:none;
+    display: flex;
+    justify-content:center;
+}
+
+.card-prepare dt {
+    margin-left: 10%;
+}
+
+.card-prepare dd {
+    margin-left: 10%;
+    border-top: thin solid black;
+}

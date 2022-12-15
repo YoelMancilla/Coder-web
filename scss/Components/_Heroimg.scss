@@ -1,0 +1,133 @@
+/* Hero images */
+/*historia*/
+
+.hero-img-h {
+    opacity: 0.7;
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    background-image: url(/imgs/historia-p.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:0px, 200px;
+}
+/* geografia */
+
+.hero-img-g {
+    opacity: 0.7;
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    background-image: url(/imgs/Imagen-geo-salta.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:0px, 200px ;
+}
+/* economia */
+
+.hero-img-e {
+    opacity: 0.7;
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    background-image: url(/imgs/economia-p.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:0px, 200px;
+    position: relative;
+}
+
+/* tradicion */
+
+.hero-img-t {
+    opacity: 0.7;
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    background-image: url(/imgs/tradicion.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:0px, 200px ;
+    position: relative;
+}
+
+
+.hero-1 {
+    width: 50%;
+    height: 50vh;
+    background-color: $Cblack;
+    background-image: url(/Img-proyecto/empanadas-t.jpg);
+    background-repeat: no-repeat;
+    background-position:0 -200px ;
+    opacity: 0.8;
+    filter: contrast(80%);  
+}
+.hero-1 > * {
+    margin-top:5vh;
+    color: $Cwhite;
+    font-weight: 800;
+    text-align: center;
+    font-size: 5vmin;
+    display: flex;
+    justify-content:center;
+}
+
+.hero-2 {
+    width: 50%;
+    height: 50vh;
+    background-color: $Cblack;
+    background-image: url(/Img-proyecto/charquisillo-t.jpg);
+    background-repeat: no-repeat;
+    background-position:-50px -150px;
+    opacity: 0.8;
+    filter: contrast(80%);  
+}
+.hero-2 > * {
+    margin-top:6vh;  
+    color: $Cblack;
+    font-weight: 800;
+    text-align: center;
+    font-size: 5vmin;
+    display: flex;
+    justify-content:center;
+}
+
+.hero-3 {
+    width: 50%;
+    height: 50vh;
+    background-color: $Cblack;
+    background-image: url(/Img-proyecto/humitas-t.jpg);
+    background-repeat: no-repeat;
+    background-position:-150px -150px;
+    opacity: 0.8;
+    filter: contrast(80%); 
+}
+.hero-3 > * {
+    margin-top:6vh;  
+    color: $Cwhite;
+    font-weight: 800;
+    text-align: center;
+    font-size: 5vmin;
+    display: flex;
+    justify-content:center;
+}
+
+.hero-4 {
+    width: 50%;
+    height: 50vh;
+    background-color: $Cblack;
+    background-image: url(/Img-proyecto/locro-t.png);
+    background-repeat: no-repeat;
+    background-position:-150px -150px;
+    opacity: 0.8;
+    filter: contrast(80%); 
+}
+.hero-4 > * {
+    margin-top:6vh;  
+    color: $Cblack;
+    font-weight: 800;
+    text-align: center;
+    font-size: 5vmin;
+    display: flex;
+    justify-content:center;
+}
