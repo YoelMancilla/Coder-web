@@ -1,71 +1,27 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-family: serif;
-}
-
-iframe {
-  width: 20vmax;
-  height: 20vmin;
-  display: block;
-}
-
-img {
-  width: 30vmax;
-  height: 30vmin;
-}
-
-.body-1 {
-  background-color: rgb(103, 103, 103);
-  overflow-x: hidden;
-}
-
-.html-g {
-  background-color: rgba(125, 67, 93, 0.8352941176);
-  overflow-x: hidden;
-}
-
-.html-h {
-  background-color: rgba(131, 60, 0, 0.6352941176);
-  overflow-x: hidden;
-}
-
-.html-g {
-  background-color: rgba(125, 67, 93, 0.8352941176);
-  overflow-x: hidden;
-}
-
-.html-e {
-  background-color: rgba(179, 118, 68, 0.5764705882);
-  overflow-x: hidden;
-}
-
-.html-t {
-  background-color: rgba(101, 4, 48, 0.894);
-  overflow-x: hidden;
-}
-
 .header-P {
-  background-color: rgb(58, 58, 58);
-  width: 100%;
-  height: 40vmin;
+  background-color: rgb(154, 112, 112);
+  max-width: 100%;
+  max-height: 40vmin;
 }
 
 .nav-enter {
   position: relative;
-  width: 100%;
-  height: 10vh;
+  max-width: 100vmax;
+  max-height: auto;
+  margin: 0;
+}
+
+.nav-enter ul {
+  margin: 0vw 0vmax 0vw 10vmax;
 }
 
 .nav-enter ul li {
-  display: inline-block;
+  display: inline;
   clip-path: polygon(88% 30%, 100% 50%, 88% 71%, 15% 71%, 0 50%, 15% 30%);
   padding: 1.5vmax;
   background-color: #de5166;
   font-size: 2.5vw;
-  margin: 1vw 5vw 1vw 5vw;
+  margin: 0vw 5vmax 0vw 0vmax;
 }
 
 .nav-enter a {
@@ -85,14 +41,14 @@ img {
 
 .container-img {
   position: relative;
-  width: 100%;
-  height: 30vmax;
+  max-width: 100%;
+  max-height: 30vmax;
 }
 
 .container-img img {
   display: inline-block;
-  margin: 2.5vw 0vw 0vw 0vw;
-  width: 15vmax;
+  margin: 2.5vmax 0vw 0vw 0vw;
+  max-width: 15vmax;
   height: 25vmin;
 }
 
@@ -120,6 +76,7 @@ img {
 .menu-img {
   width: 5vmax;
   height: 5vmax;
+  border: thin solid black;
   background-color: rgb(209, 109, 124);
 }
 
@@ -173,6 +130,318 @@ img {
   filter: contrast(80%);
 }
 
+.foot {
+  position: relative;
+  top: 25vmin;
+  background-color: #de5166;
+  max-width: 100vmax;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 50vw);
+  grid-template-rows: repeat(4, 15vh);
+}
+
+/* historia */
+.foot-h {
+  background-color: #833c00;
+  position: relative;
+  top: 100vh;
+  width: 100vw;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 50vw);
+  grid-template-rows: repeat(4, 15vh);
+}
+
+.foot-g {
+  background-color: #5f3c4c;
+  position: relative;
+  top: 100vh;
+  width: 100vw;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 50vw);
+  grid-template-rows: repeat(4, 15vh);
+}
+
+/* economia */
+.foot-e {
+  background-color: #b37644;
+  position: relative;
+  top: 100vh;
+  width: 100vw;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 50vw);
+  grid-template-rows: repeat(4, 15vh);
+}
+
+/* tradicion */
+.foot-t {
+  background-color: #651c37;
+  position: relative;
+  top: 100vh;
+  width: 100vw;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 50vw);
+  grid-template-rows: repeat(4, 15vh);
+}
+
+.Container-title-foot {
+  grid-row: 1/2;
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.Container-title-foot h2 {
+  text-align: center;
+  font-size: 3vmax;
+}
+
+.box-links {
+  grid-row: 2/5;
+  grid-column: 1/2;
+}
+
+.nav-foot, .nav-foot-h, .nav-foot-g, .nav-foot-e, .nav-foot-t {
+  position: relative;
+}
+
+.nav-foot > *, .nav-foot-h > *, .nav-foot-g > *, .nav-foot-e > *, .nav-foot-t > * {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5vmax;
+  list-style: none;
+}
+
+.nav-foot a, .nav-foot-h a, .nav-foot-g a, .nav-foot-e a, .nav-foot-t a {
+  color: black;
+  text-decoration: none;
+  font-size: 2vmax;
+}
+
+.nav-foot a:hover, .nav-foot-h a:hover, .nav-foot-g a:hover, .nav-foot-e a:hover, .nav-foot-t a:hover {
+  color: rgb(70, 70, 70);
+  text-decoration: none;
+}
+
+.nav-foot ul li img, .nav-foot-h ul li img, .nav-foot-g ul li img, .nav-foot-e ul li img, .nav-foot-t ul li img {
+  max-width: 4vmax;
+  max-height: 4vmax;
+}
+
+.box-icons {
+  grid-row: 2/5;
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.caja-icon {
+  position: relative;
+}
+
+.caja-icon a img {
+  width: 10vmax;
+  height: 15vmin;
+  animation: icons 5s ease-out 2s infinite;
+}
+
+.caja-icon:nth-child(1) {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.caja-icon:nth-child(2) {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+.caja-icon:nth-child(3) {
+  grid-row: 1/2;
+  grid-column: 3/4;
+}
+
+.caja-icon:nth-child(4) {
+  grid-row: 2/3;
+  grid-column: 4/5;
+}
+
+@keyframes icons {
+  0% {
+    filter: contrast(100%);
+  }
+  50% {
+    filter: contrast(0%);
+  }
+  100% {
+    filter: contrast(100%);
+  }
+}
+.clip-line {
+  max-width: 20%;
+  max-height: 10px;
+  background-color: black;
+  clip-path: polygon(0 59%, 100% 59%, 100% 75%, 0 75%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: serif;
+}
+
+iframe {
+  width: 20vmax;
+  height: 20vmin;
+  display: block;
+}
+
+img {
+  width: 30vmax;
+  height: 30vmin;
+}
+
+.body-1 {
+  background-color: rgb(20, 20, 20);
+  overflow-x: hidden;
+}
+
+.html-g {
+  background-color: rgba(125, 67, 93, 0.8352941176);
+  overflow-x: hidden;
+}
+
+.html-h {
+  background-color: rgba(131, 60, 0, 0.6352941176);
+  overflow-x: hidden;
+}
+
+.html-g {
+  background-color: rgba(125, 67, 93, 0.8352941176);
+  overflow-x: hidden;
+}
+
+.html-e {
+  background-color: rgba(179, 118, 68, 0.5764705882);
+  overflow-x: hidden;
+}
+
+.html-t {
+  background-color: rgba(101, 4, 48, 0.894);
+  overflow-x: hidden;
+}
+
+.main details {
+  margin: 5%;
+  border: thick dashed #e04564;
+  background-color: #be7889;
+}
+
+.main details:hover {
+  background: linear-gradient(50deg, #e04564, #be7889, #e04564);
+  cursor: pointer;
+}
+
+.main summary, .main ul {
+  list-style: none;
+}
+
+.menu-h {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  position: relative;
+  left: 25%;
+  background-color: black;
+  min-width: 40%;
+  max-width: 50%;
+  height: 30vh;
+  max-height: 40vh;
+  outline: 5px solid orange;
+}
+
+.menu-h ul {
+  color: orange;
+  list-style: lower-roman;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.menu-h li {
+  margin-top: 1vmin;
+}
+
+.menu-h a {
+  color: orange;
+  text-decoration: none;
+  font-size: 3vmin;
+}
+
+.menu-h a:hover,
+.menu-h li:hover {
+  color: rgb(194, 114, 43);
+}
+
+.card-ingredient {
+  margin-top: 2vh;
+  border: thick solid rgb(84, 84, 84);
+  background-color: rgb(206, 76, 117);
+  color: white;
+  width: 50%;
+}
+
+.card-ingredient summary {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.card-ingredient ul {
+  list-style: circle;
+  margin-left: 10%;
+  border-top: thin solid black;
+}
+.card-ingredient li {
+  border-bottom: thin solid black;
+}
+
+.card-ingredient:hover,
+.card-prepare:hover {
+  transition: all 200ms ease-in-out 200ms;
+  transform: scale(1.1);
+}
+
+.card-prepare {
+  margin-top: 2vh;
+  border: thick solid rgb(206, 76, 117);
+  background-color: rgb(84, 84, 84);
+  color: white;
+  width: 50%;
+}
+
+.card-prepare summary {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.card-prepare dt {
+  margin-left: 10%;
+}
+.card-prepare dd {
+  margin-left: 10%;
+  border-top: thin solid black;
+}
+
+.main {
+  width: auto;
+  height: auto;
+}
+
 .main > * {
   text-align: center;
   position: relative;
@@ -183,7 +452,6 @@ img {
   color: #99646d;
   font-size: 6vmax;
 }
-
 .main p {
   color: #ddb9c0;
   font-size: 4vmax;
@@ -192,7 +460,7 @@ img {
 .container-iframe > iframe {
   position: absolute;
   margin-bottom: 5vmax;
-  width: 20vmax;
+  width: auto;
   height: 10vmin;
 }
 
@@ -214,18 +482,24 @@ img {
 }
 
 .container-img-b {
-  width: 30vmax;
-  height: 30vmin;
-  margin-top: 5vmax;
+  max-width: 30vmin;
+  max-height: 30vmin;
   position: relative;
-  left: 50%;
+  left: 35%;
 }
 
 .container-img-b img {
-  width: 30vmax;
-  height: 30vmin;
+  max-width: 30vmax;
+  max-height: 30vmin;
   position: relative;
-  right: 50%;
+}
+
+.summary-list summary {
+  font-size: 3vmax;
+}
+.summary-list li {
+  font-size: 2vmax;
+  list-style: circle;
 }
 
 .div-c {
@@ -250,7 +524,7 @@ img {
 /* estilos de iframe*/
 .container-iframe {
   width: 100%;
-  height: 60vh;
+  height: 60vmin;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -295,28 +569,28 @@ img {
 }
 
 .image-rombo-a {
-  background-image: url(/Img-proyecto/cuesta-del-obispo-g.jpg);
+  background-image: url(cuesta-del-obispo-g.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   transform: rotate(45deg);
 }
 
 .image-rombo-b {
-  background-image: url(/Img-proyecto/tren-a-las-nubes-g.png);
+  background-image: url(tren-a-las-nubes-g.png);
   background-repeat: no-repeat;
   background-size: cover;
   transform: rotate(45deg);
 }
 
 .image-rombo-c {
-  background-image: url(/Img-proyecto/Garganta-del-diablo-g.jpg);
+  background-image: url(Garganta-del-diablo-g.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   transform: rotate(-45deg);
 }
 
 .image-rombo-d {
-  background-image: url(/Img-proyecto/parque-los-cardones-g.jpg);
+  background-image: url(parque-los-cardones-g.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   transform: rotate(45deg);
@@ -487,7 +761,6 @@ img {
   grid-row: 1/2;
   text-align: center;
 }
-
 .caja-title-2 p {
   position: absolute;
   top: 1vw;
@@ -535,7 +808,6 @@ img {
   grid-row: 1/2;
   text-align: center;
 }
-
 .caja-title-3 p {
   position: absolute;
   top: 1vw;
@@ -606,10 +878,10 @@ img {
   position: relative;
   width: 100%;
   height: 30vh;
-  background-image: url(/imgs/historia-p.jpg);
+  background-image: url(historia-p.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0px, 200px;
+  background-position: 0px, 20vmax;
 }
 
 /* geografia */
@@ -618,10 +890,10 @@ img {
   position: relative;
   width: 100%;
   height: 30vh;
-  background-image: url(/imgs/Imagen-geo-salta.jpg);
+  background-image: url(Imagen-geo-salta.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0px, 200px;
+  background-position: 0px, 20vmax;
 }
 
 /* economia */
@@ -630,11 +902,10 @@ img {
   position: relative;
   width: 100%;
   height: 30vh;
-  background-image: url(/imgs/economia-p.jpg);
+  background-image: url(economia-p.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0px, 200px;
-  position: relative;
+  background-position: 0px, 20vmax;
 }
 
 /* tradicion */
@@ -643,20 +914,21 @@ img {
   position: relative;
   width: 100%;
   height: 30vh;
-  background-image: url(/imgs/tradicion.jpg);
+  background-image: url(tradicion.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0px, 200px;
-  position: relative;
+  background-position: 0px, 20vmax;
 }
 
 .hero-1 {
   width: 50%;
   height: 50vh;
   background-color: #000;
-  background-image: url(/Img-proyecto/empanadas-t.jpg);
+  background-image: url(empanadas-t.jpg);
+  box-sizing: border-box;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: 0 -200px;
+  background-position: 0, 200px;
   opacity: 0.8;
   filter: contrast(80%);
 }
@@ -675,9 +947,11 @@ img {
   width: 50%;
   height: 50vh;
   background-color: #000;
-  background-image: url(/Img-proyecto/charquisillo-t.jpg);
+  box-sizing: border-box;
+  background-image: url(charquisillo-t.jpg);
   background-repeat: no-repeat;
-  background-position: -50px -150px;
+  background-size: cover;
+  background-position: 0, -150px;
   opacity: 0.8;
   filter: contrast(80%);
 }
@@ -696,9 +970,11 @@ img {
   width: 50%;
   height: 50vh;
   background-color: #000;
-  background-image: url(/Img-proyecto/humitas-t.jpg);
+  box-sizing: border-box;
+  background-image: url(humitas-t.jpg);
   background-repeat: no-repeat;
-  background-position: -150px -150px;
+  background-size: cover;
+  background-position: 0, -150px;
   opacity: 0.8;
   filter: contrast(80%);
 }
@@ -717,9 +993,11 @@ img {
   width: 50%;
   height: 50vh;
   background-color: #000;
-  background-image: url(/Img-proyecto/locro-t.png);
+  box-sizing: border-box;
+  background-image: url(locro-t.png);
   background-repeat: no-repeat;
-  background-position: -150px -150px;
+  background-size: cover;
+  background-position: 0, -150px;
   opacity: 0.8;
   filter: contrast(80%);
 }
@@ -734,258 +1012,7 @@ img {
   justify-content: center;
 }
 
-.main details {
-  margin: 5%;
-  border: thick dashed #e04564;
-  background-color: #be7889;
-}
-
-.main details:hover {
-  background: linear-gradient(50deg, #e04564, #be7889, #e04564);
-  cursor: pointer;
-}
-
-.main summary, .main ul {
-  list-style: none;
-}
-
-.menu-h {
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-  position: relative;
-  left: 25%;
-  background-color: black;
-  min-width: 40%;
-  max-width: 50%;
-  height: 30vh;
-  max-height: 40vh;
-  outline: 5px solid orange;
-}
-
-.menu-h ul {
-  color: orange;
-  list-style: lower-roman;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.menu-h li {
-  margin-top: 1vmin;
-}
-
-.menu-h a {
-  color: orange;
-  text-decoration: none;
-  font-size: 3vmin;
-}
-
-.menu-h a:hover,
-.menu-h li:hover {
-  color: rgb(194, 114, 43);
-}
-
-.card-ingredient {
-  margin-top: 2vh;
-  border: thick solid rgb(84, 84, 84);
-  background-color: rgb(206, 76, 117);
-  color: white;
-  width: 50%;
-}
-
-.card-ingredient:hover,
-.card-prepare:hover {
-  transition: all 200ms ease-in-out 200ms;
-  transform: scale(1.1);
-}
-
-.card-ingredient summary {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
-
-.card-ingredient ul {
-  list-style: circle;
-  margin-left: 10%;
-  border-top: thin solid black;
-}
-
-.card-ingredient li {
-  border-bottom: thin solid black;
-}
-
-.card-prepare {
-  margin-top: 2vh;
-  border: thick solid rgb(206, 76, 117);
-  background-color: rgb(84, 84, 84);
-  color: white;
-  width: 50%;
-}
-
-.card-prepare summary {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
-
-.card-prepare dt {
-  margin-left: 10%;
-}
-
-.card-prepare dd {
-  margin-left: 10%;
-  border-top: thin solid black;
-}
-
-.foot {
-  position: relative;
-  top: 100vh;
-  background-color: #de5166;
-  width: 100vw;
-  height: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 50vw);
-  grid-template-rows: repeat(4, 15vh);
-}
-
-/* historia */
-.foot-h {
-  background-color: #833c00;
-  position: relative;
-  top: 100vh;
-  width: 100vw;
-  height: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 50vw);
-  grid-template-rows: repeat(4, 15vh);
-}
-
-.foot-g {
-  background-color: #5f3c4c;
-  position: relative;
-  top: 100vh;
-  width: 100vw;
-  height: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 50vw);
-  grid-template-rows: repeat(4, 15vh);
-}
-
-/* economia */
-.foot-e {
-  background-color: #b37644;
-  position: relative;
-  top: 100vh;
-  width: 100vw;
-  height: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 50vw);
-  grid-template-rows: repeat(4, 15vh);
-}
-
-/* tradicion */
-.foot-t {
-  background-color: #651c37;
-  position: relative;
-  top: 100vh;
-  width: 100vw;
-  height: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 50vw);
-  grid-template-rows: repeat(4, 15vh);
-}
-
-.Container-title-foot {
-  grid-row: 1/2;
-  grid-column: 1/3;
-  text-align: center;
-  font-size: 3vmax;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.box-links {
-  grid-row: 2/5;
-  grid-column: 1/2;
-}
-
-.nav-foot, .nav-foot-h, .nav-foot-g, .nav-foot-e, .nav-foot-t {
-  position: relative;
-}
-
-.nav-foot > *, .nav-foot-h > *, .nav-foot-g > *, .nav-foot-e > *, .nav-foot-t > * {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 5vmax;
-  list-style: none;
-}
-
-.nav-foot a, .nav-foot-h a, .nav-foot-g a, .nav-foot-e a, .nav-foot-t a {
-  color: black;
-  text-decoration: none;
-}
-
-.nav-foot a:hover, .nav-foot-h a:hover, .nav-foot-g a:hover, .nav-foot-e a:hover, .nav-foot-t a:hover {
-  color: rgb(70, 70, 70);
-  text-decoration: none;
-}
-
-.nav-foot ul li img, .nav-foot-h ul li img, .nav-foot-g ul li img, .nav-foot-e ul li img, .nav-foot-t ul li img {
-  width: 4vmax;
-  height: 4vmax;
-}
-
-.box-icons {
-  grid-row: 2/5;
-  grid-column: 2/3;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-}
-
-.caja-icon {
-  position: relative;
-}
-
-.caja-icon a img {
-  width: 10vw;
-  height: 15vh;
-  animation: icons 5s ease-out 2s infinite;
-}
-
-.caja-icon:nth-child(1) {
-  grid-row: 1/2;
-  grid-column: 1/2;
-}
-
-.caja-icon:nth-child(2) {
-  grid-row: 2/3;
-  grid-column: 2/3;
-}
-
-.caja-icon:nth-child(3) {
-  grid-row: 1/2;
-  grid-column: 3/4;
-}
-
-.caja-icon:nth-child(4) {
-  grid-row: 2/3;
-  grid-column: 4/5;
-}
-
-@keyframes icons {
-  0% {
-    filter: contrast(100%);
-  }
-  50% {
-    filter: contrast(0%);
-  }
-  100% {
-    filter: contrast(100%);
-  }
-}
-@media screen and (max-width: 724px) {
+@media only screen and (max-width: 724px) {
   iframe {
     width: 50vmax;
     height: 5vmin;
@@ -1080,6 +1107,10 @@ img {
     height: 20vh;
   }
   /* main P*/
+  .main {
+    max-width: 100vmax;
+    max-height: 100vmin;
+  }
   .main h2 {
     color: #99646d;
     font-size: 5vmax;
@@ -1105,14 +1136,11 @@ img {
     width: 50vmax;
     height: 50vmin;
     position: relative;
-    margin-top: 5vw;
-    left: -25%;
   }
   .container-img-b img {
     width: 50vmax;
     height: 50vmin;
-    position: absolute;
-    left: 35%;
+    left: 5vmax;
   }
   /* main g */
   .image-rombo-b, .image-rombo-a, .image-rombo-c, .image-rombo-d {
@@ -1196,7 +1224,7 @@ img {
     background-color: #000;
     background-image: url(/Img-proyecto/empanadas-t.jpg);
     background-repeat: no-repeat;
-    background-position: 0 -200px;
+    background-position: 0, -150px;
     opacity: 0.8;
     filter: contrast(80%);
   }
@@ -1206,7 +1234,7 @@ img {
     background-color: rgb(0, 0, 0);
     background-image: url(/Img-proyecto/charquisillo-t.jpg);
     background-repeat: no-repeat;
-    background-position: -50px -150px;
+    background-position: 0px, -150px;
     opacity: 0.8;
     filter: contrast(80%);
   }
@@ -1216,7 +1244,7 @@ img {
     background-color: #000;
     background-image: url(/Img-proyecto/humitas-t.jpg);
     background-repeat: no-repeat;
-    background-position: -150px -150px;
+    background-position: -150px, -150px;
     opacity: 0.8;
     filter: contrast(80%);
   }
@@ -1226,7 +1254,7 @@ img {
     background-color: #000;
     background-image: url(/Img-proyecto/locro-t.png);
     background-repeat: no-repeat;
-    background-position: -150px -150px;
+    background-position: -150px, -150px;
     opacity: 0.8;
     filter: contrast(80%);
   }

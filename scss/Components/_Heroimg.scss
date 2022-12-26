@@ -6,10 +6,10 @@
     position: relative;
     width: 100%;
     height: 30vh;
-    background-image: url(/imgs/historia-p.jpg);
+    background-image: url(historia-p.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position:0px, 200px;
+    background-position:0px, 20vmax;
 }
 /* geografia */
 
@@ -18,10 +18,10 @@
     position: relative;
     width: 100%;
     height: 30vh;
-    background-image: url(/imgs/Imagen-geo-salta.jpg);
+    background-image: url(Imagen-geo-salta.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position:0px, 200px ;
+    background-repeat:no-repeat;
+    background-position:0px, 20vmax ;
 }
 /* economia */
 
@@ -30,11 +30,10 @@
     position: relative;
     width: 100%;
     height: 30vh;
-    background-image: url(/imgs/economia-p.jpg);
+    background-image: url(economia-p.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position:0px, 200px;
-    position: relative;
+    background-position:0px, 20vmax;
 }
 
 /* tradicion */
@@ -44,11 +43,10 @@
     position: relative;
     width: 100%;
     height: 30vh;
-    background-image: url(/imgs/tradicion.jpg);
+    background-image: url(tradicion.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position:0px, 200px ;
-    position: relative;
+    background-position:0px, 20vmax;
 }
 
 
@@ -56,9 +54,11 @@
     width: 50%;
     height: 50vh;
     background-color: $Cblack;
-    background-image: url(/Img-proyecto/empanadas-t.jpg);
+    background-image: url(empanadas-t.jpg);
+    box-sizing: border-box;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position:0 -200px ;
+    background-position:0 ,200px ;
     opacity: 0.8;
     filter: contrast(80%);  
 }
@@ -76,9 +76,11 @@
     width: 50%;
     height: 50vh;
     background-color: $Cblack;
-    background-image: url(/Img-proyecto/charquisillo-t.jpg);
+    box-sizing: border-box;
+    background-image: url(charquisillo-t.jpg);
     background-repeat: no-repeat;
-    background-position:-50px -150px;
+    background-size: cover;
+    background-position:0 ,-150px;
     opacity: 0.8;
     filter: contrast(80%);  
 }
@@ -96,9 +98,11 @@
     width: 50%;
     height: 50vh;
     background-color: $Cblack;
-    background-image: url(/Img-proyecto/humitas-t.jpg);
+    box-sizing: border-box;
+    background-image: url(humitas-t.jpg);
     background-repeat: no-repeat;
-    background-position:-150px -150px;
+    background-size: cover;
+    background-position:0 ,-150px;
     opacity: 0.8;
     filter: contrast(80%); 
 }
@@ -116,9 +120,11 @@
     width: 50%;
     height: 50vh;
     background-color: $Cblack;
-    background-image: url(/Img-proyecto/locro-t.png);
+    box-sizing: border-box;
+    background-image: url(locro-t.png);
     background-repeat: no-repeat;
-    background-position:-150px -150px;
+    background-size: cover;
+    background-position:0 ,-150px;
     opacity: 0.8;
     filter: contrast(80%); 
 }
