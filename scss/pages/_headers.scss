@@ -1,8 +1,10 @@
 
 .header-P {   
-    background-color: rgb(154, 112, 112);
+    background:linear-gradient(25deg, rgb(192, 93, 93) 0 20%, white 40% 60%,  rgb(192, 93, 93) 80%);
+    border-bottom:thick dotted red ;
     max-width: 100%;
     max-height: 40vmin;
+    
 }
 
 
@@ -45,6 +47,11 @@
     position: relative;
     max-width: 100%;
     max-height:30vmax;
+}
+
+.container-img:hover {
+    cursor: pointer;
+    filter: contrast(150%);
 }
 
 .container-img img {
