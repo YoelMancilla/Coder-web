@@ -26,7 +26,7 @@
 }
 
 .nav-enter a {
-  color:rgb(239, 235, 235);
+  color: #efadc9;
   text-decoration: none;
 }
 
@@ -45,12 +45,10 @@
   max-width: 100%;
   max-height: 30vmax;
 }
-
-.container-img:hover {
+.container-img img:hover {
   cursor: pointer;
   filter: contrast(150%);
 }
-
 .container-img img {
   display: inline-block;
   margin: 2.5vmax 0vw 0vw 0vw;
@@ -81,7 +79,9 @@
 
 .menu-img {
   width: 5vmax;
+  min-width: 6vmax;
   height: 5vmax;
+  min-height: 6vmax;
   border: thin solid black;
   background-color: rgb(209, 109, 124);
 }
@@ -143,8 +143,8 @@
   max-width: 100vmax;
   height: auto;
   display: grid;
-  grid-template-columns: repeat(2, 50vw);
-  grid-template-rows: repeat(4, 15vh);
+  grid-template-columns: repeat(2, 5fr);
+  grid-template-rows: repeat(4, 1fr);
 }
 
 /* historia */
@@ -359,16 +359,16 @@ img {
 }
 
 .menu-h {
-  margin-top: 5vh;
-  margin-bottom: 5vh;
+  margin-top: 5vmin;
+  margin-bottom: 5vmin;
   position: relative;
   left: 25%;
   background-color: black;
   min-width: 40%;
   max-width: 50%;
-  height: 30vh;
-  max-height: 40vh;
-  outline: 5px solid orange;
+  height: auto;
+  max-height: auto;
+  outline: 0.5vmin solid orange;
 }
 
 .menu-h ul {
@@ -395,17 +395,18 @@ img {
 }
 
 .card-ingredient {
-  margin-top: 2vh;
+  margin-top: 2vmin;
   border: thick solid rgb(84, 84, 84);
   background-color: rgb(206, 76, 117);
   color: white;
-  width: 50%;
+  width: 40vmax;
 }
 
 .card-ingredient summary {
   list-style: none;
   display: flex;
   justify-content: center;
+  font-size: 2vmax;
 }
 .card-ingredient ul {
   list-style: circle;
@@ -414,6 +415,7 @@ img {
 }
 .card-ingredient li {
   border-bottom: thin solid black;
+  font-size: 1.2vmax;
 }
 
 .card-ingredient:hover,
@@ -423,24 +425,27 @@ img {
 }
 
 .card-prepare {
-  margin-top: 2vh;
+  margin-top: 2vmin;
   border: thick solid rgb(206, 76, 117);
   background-color: rgb(84, 84, 84);
   color: white;
-  width: 50%;
+  width: 40vmax;
 }
 
 .card-prepare summary {
+  font-size: 2vmax;
   list-style: none;
   display: flex;
   justify-content: center;
 }
 .card-prepare dt {
   margin-left: 10%;
+  font-size: 1.5vmax;
 }
 .card-prepare dd {
   margin-left: 10%;
   border-top: thin solid black;
+  font-size: 1vmax;
 }
 
 .main {
@@ -463,10 +468,15 @@ img {
   font-size: 4vmax;
 }
 
+.container-iframe {
+  position: relative;
+  width: 50%;
+  height: 10vmin;
+  bottom: 50vmax;
+}
+
 .container-iframe > iframe {
-  position: absolute;
-  margin-bottom: 5vmax;
-  width: auto;
+  width: 100%;
   height: 10vmin;
 }
 
@@ -493,7 +503,6 @@ img {
   position: relative;
   left: 35%;
 }
-
 .container-img-b img {
   max-width: 30vmax;
   max-height: 30vmin;
@@ -508,23 +517,39 @@ img {
   list-style: circle;
 }
 
-.div-c {
+.div-c1, .div-c2, .div-c3, .div-c4, .div-c5 {
   width: 50vw;
-  height: 30vh;
+  height: auto;
   margin-left: 25%;
   margin-top: 5%;
+  position: relative;
+}
+.div-c1 img, .div-c2 img, .div-c3 img, .div-c4 img, .div-c5 img {
+  border-radius: 5px 5px 0px 0px;
 }
 
 .card-body-1 {
   background-color: #000;
   color: #c71;
-  border-radius: 5px;
+  border-radius: 0px 0px 5px 5px;
+}
+.card-body-1 h2 {
+  font-size: 3vmax;
+}
+.card-body-1 p {
+  font-size: 3vmin;
 }
 
 .card-body-2 {
   background-color: #c71;
   color: #000;
-  border-radius: 5px;
+  border-radius: 0px 0px 5px 5px;
+}
+.card-body-2 h2 {
+  font-size: 3vmax;
+}
+.card-body-2 p {
+  font-size: 3vmin;
 }
 
 /* estilos de iframe*/
@@ -535,9 +560,8 @@ img {
   justify-content: center;
   align-items: center;
 }
-
 .container-iframe iframe {
-  margin-top: 5%;
+  margin-top: 100%;
   width: 50%;
   height: 60vh;
 }
@@ -704,30 +728,28 @@ img {
 
 .caja-title-1 {
   width: 100%;
-  height: 50vh;
+  height: 20vmin;
   display: flex;
   grid-column: 3/5;
   grid-row: 1/5;
   border-radius: 4vmax/4vmax;
 }
-
 .caja-title-1 h3 {
   position: absolute;
-  top: 2vw;
-  left: 1vw;
+  top: 2vmax;
+  left: 1vmax;
   font-size: 3vmax;
   color: rgb(206, 76, 117);
   grid-column: 3/5;
   grid-row: 1/2;
   text-align: center;
 }
-
 .caja-title-1 p {
   position: absolute;
   top: 1vw;
   font-weight: 600;
   line-height: 3ch;
-  font-size: 2.5vh;
+  font-size: 2.5vmin;
   text-align: center;
   grid-column: 3/5;
   grid-row: 2/5;
@@ -757,7 +779,6 @@ img {
   grid-row: 1/5;
   border-radius: 4vmax/4vmax;
 }
-
 .caja-title-2 h3 {
   position: absolute;
   top: 3vh;
@@ -803,7 +824,6 @@ img {
   grid-row: 1/5;
   border-radius: 4vmax/4vmax;
 }
-
 .caja-title-3 h3 {
   position: absolute;
   top: 2vw;
@@ -849,7 +869,6 @@ img {
   grid-row: 1/5;
   border-radius: 4vmax/4vmax;
 }
-
 .caja-title-4 h3 {
   position: absolute;
   top: 2vw;
@@ -859,7 +878,6 @@ img {
   grid-row: 1/2;
   text-align: center;
 }
-
 .caja-title-4 p {
   position: absolute;
   top: 1vw;
@@ -874,7 +892,7 @@ img {
 
 .comidas-tipicas {
   position: relative;
-  left: 25%;
+  margin-left: 10vmax;
 }
 
 /* Hero images */
@@ -927,33 +945,31 @@ img {
 }
 
 .hero-1 {
-  width: 50%;
-  height: 50vh;
+  width: 50vmax;
+  height: 50vmin;
   background-color: #000;
   background-image: url(empanadas-t.jpg);
-  box-sizing: border-box;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0, 200px;
+  background-position: 0, -50px;
   opacity: 0.8;
   filter: contrast(80%);
 }
 
 .hero-1 > * {
-  margin-top: 5vh;
+  margin-top: 5vmin;
   color: #fff;
   font-weight: 800;
   text-align: center;
-  font-size: 5vmin;
+  font-size: 4.5vmin;
   display: flex;
   justify-content: center;
 }
 
 .hero-2 {
-  width: 50%;
-  height: 50vh;
+  width: 50vmax;
+  height: 50vmin;
   background-color: #000;
-  box-sizing: border-box;
   background-image: url(charquisillo-t.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -963,20 +979,19 @@ img {
 }
 
 .hero-2 > * {
-  margin-top: 6vh;
+  margin-top: 5vmin;
   color: #000;
   font-weight: 800;
   text-align: center;
-  font-size: 5vmin;
+  font-size: 4.5vmin;
   display: flex;
   justify-content: center;
 }
 
 .hero-3 {
-  width: 50%;
-  height: 50vh;
+  width: 50vmax;
+  height: 50vmin;
   background-color: #000;
-  box-sizing: border-box;
   background-image: url(humitas-t.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -986,20 +1001,19 @@ img {
 }
 
 .hero-3 > * {
-  margin-top: 6vh;
+  margin-top: 5vmin;
   color: #fff;
   font-weight: 800;
   text-align: center;
-  font-size: 5vmin;
+  font-size: 4.5vmin;
   display: flex;
   justify-content: center;
 }
 
 .hero-4 {
-  width: 50%;
-  height: 50vh;
+  width: 50vmax;
+  height: 50vmin;
   background-color: #000;
-  box-sizing: border-box;
   background-image: url(locro-t.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1009,11 +1023,11 @@ img {
 }
 
 .hero-4 > * {
-  margin-top: 6vh;
+  margin-top: 5vmin;
   color: #000;
   font-weight: 800;
   text-align: center;
-  font-size: 5vmin;
+  font-size: 4.5vmin;
   display: flex;
   justify-content: center;
 }
@@ -1039,14 +1053,15 @@ img {
   }
   .container-title {
     position: absolute;
-    left: 10vh;
-    top: -1vh;
+    left: 50%;
+    right: auto;
+    top: -1vmin;
     width: 100%;
     height: 20vmin;
   }
   .container-title h1 {
     font-size: 8vmin;
-    bottom: 2vh;
+    bottom: 2vmin;
   }
   .menu-label {
     display: block;
@@ -1078,7 +1093,7 @@ img {
   .nav-enter-1 {
     width: 50%;
     position: fixed;
-    left: 50%;
+    left: 40%;
     top: 20vmin;
     transition: left 100ms ease-in 100ms;
   }
@@ -1125,6 +1140,21 @@ img {
     color: #ddb9c0;
     font-size: 3vmax;
   }
+  .main details {
+    margin-top: 1vmax;
+    margin-bottom: auto;
+  }
+  .container-iframe {
+    position: relative;
+    left: 25%;
+    bottom: 15vmax;
+    width: 50%;
+    height: 30vmin;
+  }
+  .container-iframe > iframe {
+    width: 100%;
+    height: 30vmin;
+  }
   .cont-span span {
     display: flex;
     flex-direction: row;
@@ -1146,7 +1176,7 @@ img {
   .container-img-b img {
     width: 50vmax;
     height: 50vmin;
-    left: 5vmax;
+    right: 5vmax;
   }
   /* main g */
   .image-rombo-b, .image-rombo-a, .image-rombo-c, .image-rombo-d {
@@ -1206,9 +1236,9 @@ img {
   }
   .caja-title-1 h3, .caja-title-2 h3, .caja-title-3 h3, .caja-title-4 h3 {
     position: absolute;
-    top: 3vw;
-    left: 1vw;
-    font-size: 6vw;
+    top: 3vmax;
+    left: 1vmax;
+    font-size: 2.5vmax;
   }
   .caja-title-1 p, .caja-title-2 p, .caja-title-3 p, .caja-title-4 p {
     font-weight: 400;
@@ -1216,6 +1246,7 @@ img {
     font-size: 2vh;
   }
   .caja-img-1 img, .caja-img-2 img, .caja-img-3 img, .caja-img-4 img {
+    position: static;
     height: 40vh;
   }
   .comidas-tipicas {
@@ -1228,9 +1259,9 @@ img {
     height: 40vh;
     padding: 0;
     background-color: #000;
-    background-image: url(/Img-proyecto/empanadas-t.jpg);
+    background-image: url(/empanadas-t.jpg);
     background-repeat: no-repeat;
-    background-position: 0, -150px;
+    background-position: 0, -50px;
     opacity: 0.8;
     filter: contrast(80%);
   }
@@ -1238,9 +1269,9 @@ img {
     width: 100%;
     height: 40vh;
     background-color: rgb(0, 0, 0);
-    background-image: url(/Img-proyecto/charquisillo-t.jpg);
+    background-image: url(/charquisillo-t.jpg);
     background-repeat: no-repeat;
-    background-position: 0px, -150px;
+    background-position: 0;
     opacity: 0.8;
     filter: contrast(80%);
   }
@@ -1248,9 +1279,9 @@ img {
     width: 100%;
     height: 40vh;
     background-color: #000;
-    background-image: url(/Img-proyecto/humitas-t.jpg);
+    background-image: url(/humitas-t.jpg);
     background-repeat: no-repeat;
-    background-position: -150px, -150px;
+    background-position: 0;
     opacity: 0.8;
     filter: contrast(80%);
   }
@@ -1258,13 +1289,26 @@ img {
     width: 100%;
     height: 40vh;
     background-color: #000;
-    background-image: url(/Img-proyecto/locro-t.png);
+    background-image: url(/locro-t.png);
     background-repeat: no-repeat;
-    background-position: -150px, -150px;
+    background-position: 0;
     opacity: 0.8;
     filter: contrast(80%);
   }
   /* foot t*/
+  .foot {
+    width: 100%;
+    height: -20vmax;
+    position: relative;
+    top: 100vmax;
+    display: grid;
+    grid-template-columns: repeat(2, 5fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .nav-foot {
+    width: 25vmax;
+    height: auto;
+  }
   .nav-foot > *, .nav-foot-h > *, .nav-foot-g > *, .nav-foot-e > *, .nav-foot-t > * {
     display: flex;
     flex-direction: column;
@@ -1276,8 +1320,8 @@ img {
     margin-left: 25%;
   }
   .caja-icon a img {
-    width: 10vw;
-    height: 10vh;
+    width: 10vmax;
+    height: 10vmin;
   }
   .caja-icon:nth-child(1) {
     grid-row: 1/2;

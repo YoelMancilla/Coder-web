@@ -24,17 +24,17 @@
 
    .container-title {
       position: absolute;
-      left: 10vh;
-      top: -1vh;
+      left: 50%;
+      right: auto;
+      top: -1vmin;
       width: 100%;
       height:20vmin;
-   }
 
-   .container-title h1 {
-       font-size:8vmin;
-       bottom: 2vh;
-   }    
-
+      h1 {
+        font-size:8vmin;
+        bottom: 2vmin;
+      }    
+  }
    .menu-label {
       display: block;
       margin-left: 100%;
@@ -69,8 +69,8 @@
 
    .nav-enter-1 {
       width: 50%;
-      position: fixed;
-      left: 50%;
+      position: fixed; 
+      left: 40%;
       top: 20vmin;
       transition: left 100ms ease-in 100ms;
    }
@@ -80,12 +80,12 @@
       transition: left 100ms ease-out 100ms;
    }
 
-   .head-h, .head-g, .head-e, .head-t{
+   .head-h, .head-g, .head-e, .head-t {
        width: 100%;
        height: 20vh;
        }
    
-       .container-h, .container-g, .container-e, .container-t{
+       .container-h, .container-g, .container-e, .container-t {
        width: 100%;
        height: 20vh;
        }
@@ -119,23 +119,40 @@
   .main {
     max-width: 100vmax;
     max-height: 100vmin;
-  } 
-
-  .main h2 {
+    h2 {
       color: #99646d;
       font-size: 5vmax;
-  }
-  
-  .main p {
+    }
+    p {
       color:#ddb9c0;
       font-size: 3vmax;
+      }
+    }
+
+  .main details {
+    margin-top: 1vmax;
+    margin-bottom: auto;
   }
 
+  .container-iframe {
+    position: relative;
+    left: 25%;
+    bottom: 15vmax;
+    width:50%;
+    height:30vmin;
+}
+
+.container-iframe > iframe{
+    width:100%;
+    height:30vmin;
+}
+    
   .cont-span span {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
+
 
   .span-b {
       color: #e04564;
@@ -156,7 +173,7 @@
   .container-img-b img {
       width:$size-vmx2;
       height:$size-vmi2;
-      left:5vmax;
+      right: 5vmax;
   }
 
     /* main g */
@@ -225,9 +242,9 @@
 
   .caja-title-1 h3, .caja-title-2 h3, .caja-title-3 h3, .caja-title-4 h3 {
       position: absolute;
-      top: 3vw;
-      left: 1vw;
-      font-size: 6vw;
+      top: 3vmax;
+      left: 1vmax;
+      font-size: 2.5vmax;
   }
 
   .caja-title-1 p, .caja-title-2 p, .caja-title-3 p, .caja-title-4 p {
@@ -237,6 +254,7 @@
   }
 
   .caja-img-1 img, .caja-img-2 img, .caja-img-3 img, .caja-img-4 img {
+      position: static;
       height:40vh;
   }
 
@@ -252,9 +270,9 @@
       height: 40vh;
       padding: 0;
       background-color: $Cblack;
-      background-image: url(/Img-proyecto/empanadas-t.jpg);
+      background-image: url(/empanadas-t.jpg);
       background-repeat: no-repeat;
-      background-position:0 ,-150px ;
+      background-position:0, -50px;
       opacity: 0.8;
       filter: contrast(80%);  
   }
@@ -263,9 +281,9 @@
       width: 100%;
       height: 40vh;
       background-color: rgb(0, 0, 0);
-      background-image: url(/Img-proyecto/charquisillo-t.jpg);
+      background-image: url(/charquisillo-t.jpg);
       background-repeat: no-repeat;
-      background-position:0px ,-150px;
+      background-position:0;
       opacity: 0.8;
       filter: contrast(80%);  
   }
@@ -274,9 +292,9 @@
       width: 100%;
       height: 40vh;
       background-color: $Cblack;
-      background-image: url(/Img-proyecto/humitas-t.jpg);
+      background-image: url(/humitas-t.jpg);
       background-repeat: no-repeat;
-      background-position:-150px ,-150px;
+      background-position: 0;
       opacity: 0.8;
       filter: contrast(80%); 
   }
@@ -285,17 +303,29 @@
       width: 100%;
       height: 40vh;
       background-color: $Cblack;
-      background-image: url(/Img-proyecto/locro-t.png);
+      background-image: url(/locro-t.png);
       background-repeat: no-repeat;
-      background-position:-150px ,-150px;
+      background-position:0 ;
       opacity: 0.8;
       filter: contrast(80%); 
   }
 
    /* foot t*/
-   .nav-foot {
-     
+   .foot {
+    width: 100%;
+    height:-20vmax;
+    position: relative;  
+    top: 100vmax;
+    display: grid;
+    grid-template-columns:repeat(2, 5fr);
+    grid-template-rows:repeat(4, 1fr);  
    }
+
+   .nav-foot {
+    width: 25vmax;
+    height:auto;
+   }
+
    .nav-foot > *, .nav-foot-h > *, .nav-foot-g > *, .nav-foot-e > *, .nav-foot-t > * {
       display: flex;
       flex-direction: column;
@@ -303,15 +333,15 @@
     }
 
   .box-icons {
-      display: grid;
-      grid-template-rows: repeat(4, 1fr);
-      margin-left: 25%;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    margin-left: 25%;
     }
   
 
   .caja-icon a img {
-      width: 10vw;
-      height: 10vh;
+      width: 10vmax;
+      height: 10vmin;
     }
   
   .caja-icon:nth-child(1) {

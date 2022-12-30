@@ -51,32 +51,30 @@
 
 
 .hero-1 {
-    width: 50%;
-    height: 50vh;
+    width: 50vmax;
+    height: 50vmin;
     background-color: $Cblack;
     background-image: url(empanadas-t.jpg);
-    box-sizing: border-box;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position:0 ,200px ;
+    background-position:0 ,-50px ;
     opacity: 0.8;
     filter: contrast(80%);  
 }
 .hero-1 > * {
-    margin-top:5vh;
+    margin-top:5vmin;
     color: $Cwhite;
     font-weight: 800;
     text-align: center;
-    font-size: 5vmin;
+    font-size: 4.5vmin;
     display: flex;
     justify-content:center;
 }
 
 .hero-2 {
-    width: 50%;
-    height: 50vh;
+    width: 50vmax;
+    height: 50vmin;
     background-color: $Cblack;
-    box-sizing: border-box;
     background-image: url(charquisillo-t.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -85,20 +83,19 @@
     filter: contrast(80%);  
 }
 .hero-2 > * {
-    margin-top:6vh;  
+    margin-top:5vmin;
     color: $Cblack;
     font-weight: 800;
     text-align: center;
-    font-size: 5vmin;
+    font-size: 4.5vmin;
     display: flex;
     justify-content:center;
 }
 
 .hero-3 {
-    width: 50%;
-    height: 50vh;
+    width: 50vmax;
+    height: 50vmin;
     background-color: $Cblack;
-    box-sizing: border-box;
     background-image: url(humitas-t.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -107,20 +104,19 @@
     filter: contrast(80%); 
 }
 .hero-3 > * {
-    margin-top:6vh;  
+    margin-top:5vmin; 
     color: $Cwhite;
     font-weight: 800;
     text-align: center;
-    font-size: 5vmin;
+    font-size: 4.5vmin;
     display: flex;
     justify-content:center;
 }
 
 .hero-4 {
-    width: 50%;
-    height: 50vh;
+    width: 50vmax;
+    height: 50vmin;
     background-color: $Cblack;
-    box-sizing: border-box;
     background-image: url(locro-t.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -129,11 +125,11 @@
     filter: contrast(80%); 
 }
 .hero-4 > * {
-    margin-top:6vh;  
+    margin-top:5vmin; 
     color: $Cblack;
     font-weight: 800;
     text-align: center;
-    font-size: 5vmin;
+    font-size: 4.5vmin;
     display: flex;
     justify-content:center;
 }

@@ -47,20 +47,19 @@
     position: relative;
     max-width: 100%;
     max-height:30vmax;
-}
 
-.container-img:hover {
+    img:hover {
     cursor: pointer;
     filter: contrast(150%);
-}
+    }
 
-.container-img img {
+    img {
     display:inline-block;
     margin:2.5vmax 0vw 0vw 0vw;
     max-width:15vmax;
     height:$size-vmi1;
-}
-
+    } 
+ }
 .container-title {
     position: absolute;
     top: 4vmax;
@@ -84,8 +83,10 @@
 }
 
 .menu-img {
-    width: 5vmax;
-    height: 5vmax;
+    width:5vmax;
+    min-width:6vmax;
+    height:5vmax;
+    min-height:6vmax;
     border:thin solid black;
     background-color: rgb(209, 109, 124);
 }

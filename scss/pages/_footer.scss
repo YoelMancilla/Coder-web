@@ -6,8 +6,8 @@
     max-width: 100vmax;
     height: auto;
     display: grid;
-    grid-template-columns:repeat(2, 50vw);
-    grid-template-rows:repeat(4, 15vh);  
+    grid-template-columns:repeat(2, 5fr);
+    grid-template-rows:repeat(4, 1fr);  
 }
 
 
