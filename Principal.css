@@ -467,13 +467,12 @@ img {
 .container-iframe {
   width: 100%;
   height: 60vmin;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
 }
 .container-iframe iframe {
   width: 50%;
-  height: 60vh;
+  height: 60vmin;
+  left: 0%;
 }
 
 .cont-span span {
@@ -1017,9 +1016,9 @@ img {
 
 @media only screen and (max-width: 724px) {
   iframe {
-    width: 50vmax;
+    width: 25vmax;
     height: auto;
-    left: 5vmax;
+    left: 15vmax;
   }
   .header-P {
     position: fixed;
