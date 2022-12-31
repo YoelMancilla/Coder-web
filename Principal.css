@@ -151,47 +151,47 @@
 .foot-h {
   background-color: #833c00;
   position: relative;
-  top: 100vh;
-  width: 100vw;
-  height: 100%;
+  top: 25vmin;
+  max-width: 100vmax;
+  height: auto;
   display: grid;
-  grid-template-columns: repeat(2, 50vw);
-  grid-template-rows: repeat(4, 15vh);
+  grid-template-columns: repeat(2, 5fr);
+  grid-template-rows: repeat(4, 1fr);
 }
 
 .foot-g {
   background-color: #5f3c4c;
   position: relative;
-  top: 100vh;
-  width: 100vw;
-  height: 100%;
+  top: 25vmin;
+  max-width: 100vmax;
+  height: auto;
   display: grid;
-  grid-template-columns: repeat(2, 50vw);
-  grid-template-rows: repeat(4, 15vh);
+  grid-template-columns: repeat(2, 5fr);
+  grid-template-rows: repeat(4, 1fr);
 }
 
 /* economia */
 .foot-e {
   background-color: #b37644;
   position: relative;
-  top: 100vh;
-  width: 100vw;
-  height: 100%;
+  top: 25vmin;
+  max-width: 100vmax;
+  height: auto;
   display: grid;
-  grid-template-columns: repeat(2, 50vw);
-  grid-template-rows: repeat(4, 15vh);
+  grid-template-columns: repeat(2, 5fr);
+  grid-template-rows: repeat(4, 1fr);
 }
 
 /* tradicion */
 .foot-t {
   background-color: #651c37;
   position: relative;
-  top: 100vh;
-  width: 100vw;
-  height: 100%;
+  top: 25vmin;
+  max-width: 100vmax;
+  height: auto;
   display: grid;
-  grid-template-columns: repeat(2, 50vw);
-  grid-template-rows: repeat(4, 15vh);
+  grid-template-columns: repeat(2, 5fr);
+  grid-template-rows: repeat(4, 1fr);
 }
 
 .Container-title-foot {
@@ -287,13 +287,6 @@
     filter: contrast(100%);
   }
 }
-.clip-line {
-  max-width: 20%;
-  max-height: 10px;
-  background-color: black;
-  clip-path: polygon(0 59%, 100% 59%, 100% 75%, 0 75%);
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -303,9 +296,12 @@
 }
 
 iframe {
-  width: 20vmax;
-  height: 20vmin;
-  display: block;
+  width: 50vmax;
+  min-height: 40vmin;
+  height: auto;
+  position: relative;
+  left: 25vmax;
+  top: 2vmin;
 }
 
 img {
@@ -469,15 +465,15 @@ img {
 }
 
 .container-iframe {
-  position: relative;
-  width: 50%;
-  height: 10vmin;
-  bottom: 50vmax;
-}
-
-.container-iframe > iframe {
   width: 100%;
-  height: 10vmin;
+  height: 60vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-iframe iframe {
+  width: 50%;
+  height: 60vh;
 }
 
 .cont-span span {
@@ -552,20 +548,6 @@ img {
   font-size: 3vmin;
 }
 
-/* estilos de iframe*/
-.container-iframe {
-  width: 100%;
-  height: 60vmin;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.container-iframe iframe {
-  margin-top: 100%;
-  width: 50%;
-  height: 60vh;
-}
-
 .departamentos * p {
   color: #f1b1cd;
 }
@@ -627,12 +609,12 @@ img {
 }
 
 .info-rombo {
-  margin-top: 15vh;
+  margin-top: 15vmin;
   width: 30vmax;
   height: 30vmax;
   border: thick solid #7d2a4e;
   transform: rotate(45deg);
-  margin-left: 25%;
+  margin-left: 25vmax;
   background-color: #fc9dc8;
 }
 
@@ -698,10 +680,10 @@ img {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
   position: relative;
-  margin-top: 1vh;
+  margin-top: 1vmin;
   margin-left: 20%;
   width: 60%;
-  height: 50vh;
+  height: auto;
   background-color: #fff;
   border-radius: 4vmax/4vmax;
 }
@@ -712,7 +694,7 @@ img {
 
 .caja-img-1 {
   width: 100%;
-  height: 50vh;
+  height: 50vmin;
   grid-column: 1/3;
   grid-row: 1/5;
   border-radius: 2vmax/2vmax;
@@ -720,7 +702,7 @@ img {
 
 .caja-img-1 img {
   width: 100%;
-  height: 50vh;
+  height: 50vmin;
   grid-column: 1/3;
   grid-row: 1/4;
   border-radius: 4vmax 0vmax 0vmax 4vmax;
@@ -757,7 +739,7 @@ img {
 
 .caja-img-2 {
   width: 100%;
-  height: 50vh;
+  height: 50vmin;
   grid-column: 3/5;
   grid-row: 1/5;
   border-radius: 2vmax/2vmax;
@@ -765,7 +747,7 @@ img {
 
 .caja-img-2 img {
   width: 100%;
-  height: 50vh;
+  height: 50vmin;
   grid-column: 3/5;
   grid-row: 1/5;
   border-radius: 0vmax 4vmax 4vmax 0vmax;
@@ -773,7 +755,7 @@ img {
 
 .caja-title-2 {
   width: 100%;
-  height: 50vh;
+  height: 50vmin;
   display: flex;
   grid-column: 1/3;
   grid-row: 1/5;
@@ -802,7 +784,7 @@ img {
 
 .caja-img-3 {
   width: 100%;
-  height: 50vh;
+  height: 50vmin;
   grid-column: 1/3;
   grid-row: 1/5;
   border-radius: 2vmax/2vmax;
@@ -810,7 +792,7 @@ img {
 
 .caja-img-3 img {
   width: 100%;
-  height: 50vh;
+  height: 50vmin;
   grid-column: 1/3;
   grid-row: 1/5;
   border-radius: 4vmax 0vmax 0vmax 4vmax;
@@ -818,7 +800,7 @@ img {
 
 .caja-title-3 {
   width: 100%;
-  height: 50vh;
+  height: 50vmin;
   display: flex;
   grid-column: 3/5;
   grid-row: 1/5;
@@ -847,7 +829,7 @@ img {
 
 .caja-img-4 {
   width: 100%;
-  height: 50vh;
+  height: auto;
   grid-column: 3/5;
   grid-row: 1/5;
   border-radius: 2vmax/2vmax;
@@ -855,7 +837,7 @@ img {
 
 .caja-img-4 img {
   width: 100%;
-  height: 50vh;
+  height: 50vmin;
   grid-column: 3/5;
   grid-row: 1/5;
   border-radius: 0vmax 4vmax 4vmax 0vmax;
@@ -863,10 +845,10 @@ img {
 
 .caja-title-4 {
   width: 100%;
-  height: 50vh;
+  height: auto;
   display: flex;
   grid-column: 1/3;
-  grid-row: 1/5;
+  grid-row: 1/3;
   border-radius: 4vmax/4vmax;
 }
 .caja-title-4 h3 {
@@ -892,7 +874,8 @@ img {
 
 .comidas-tipicas {
   position: relative;
-  margin-left: 10vmax;
+  left: 25vmax;
+  right: 25vmax;
 }
 
 /* Hero images */
@@ -1035,7 +1018,8 @@ img {
 @media only screen and (max-width: 724px) {
   iframe {
     width: 50vmax;
-    height: 5vmin;
+    height: auto;
+    left: 5vmax;
   }
   .header-P {
     position: fixed;
@@ -1147,7 +1131,6 @@ img {
   .container-iframe {
     position: relative;
     left: 25%;
-    bottom: 15vmax;
     width: 50%;
     height: 30vmin;
   }
@@ -1182,11 +1165,11 @@ img {
   .image-rombo-b, .image-rombo-a, .image-rombo-c, .image-rombo-d {
     width: 30vmax;
     height: 30vmax;
-    margin-left: 5vmax;
+    margin-left: 4vmax;
   }
   .info-rombo {
     margin-top: 10vh;
-    margin-left: 17%;
+    margin-left: 5vmax;
     width: 38vmax;
     height: 38vmax;
   }
@@ -1251,7 +1234,7 @@ img {
   }
   .comidas-tipicas {
     position: relative;
-    left: 18%;
+    left: 0%;
     width: 60%;
   }
   .hero-1 {
@@ -1259,7 +1242,7 @@ img {
     height: 40vh;
     padding: 0;
     background-color: #000;
-    background-image: url(/empanadas-t.jpg);
+    background-image: url(empanadas-t.jpg);
     background-repeat: no-repeat;
     background-position: 0, -50px;
     opacity: 0.8;
@@ -1269,7 +1252,7 @@ img {
     width: 100%;
     height: 40vh;
     background-color: rgb(0, 0, 0);
-    background-image: url(/charquisillo-t.jpg);
+    background-image: url(charquisillo-t.jpg);
     background-repeat: no-repeat;
     background-position: 0;
     opacity: 0.8;
@@ -1279,7 +1262,7 @@ img {
     width: 100%;
     height: 40vh;
     background-color: #000;
-    background-image: url(/humitas-t.jpg);
+    background-image: url(humitas-t.jpg);
     background-repeat: no-repeat;
     background-position: 0;
     opacity: 0.8;
@@ -1289,7 +1272,7 @@ img {
     width: 100%;
     height: 40vh;
     background-color: #000;
-    background-image: url(/locro-t.png);
+    background-image: url(locro-t.png);
     background-repeat: no-repeat;
     background-position: 0;
     opacity: 0.8;

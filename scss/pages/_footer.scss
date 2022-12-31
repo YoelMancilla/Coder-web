@@ -15,47 +15,47 @@
 .foot-h {
     background-color: #833c00;
     position: relative;
-    top: 100vh;
-    width: 100vw;
-    height: 100%;
+    top: 25vmin;
+    max-width: 100vmax;
+    height: auto;
     display: grid;
-    grid-template-columns:repeat(2, 50vw);
-    grid-template-rows:repeat(4, 15vh);  
+    grid-template-columns:repeat(2, 5fr);
+    grid-template-rows:repeat(4, 1fr);  
 }
 // geografia
 .foot-g {
     background-color: #5f3c4c;
     position: relative;
-    top: 100vh;
-    width: 100vw;
-    height: 100%;
+    top: 25vmin;
+    max-width: 100vmax;
+    height: auto;
     display: grid;
-    grid-template-columns:repeat(2, 50vw);
-    grid-template-rows:repeat(4, 15vh);  
+    grid-template-columns:repeat(2, 5fr);
+    grid-template-rows:repeat(4, 1fr);  
 }
 
 /* economia */
 .foot-e {
     background-color: #b37644;
     position: relative;
-    top: 100vh;
-    width: 100vw;
-    height: 100%;
+    top: 25vmin;
+    max-width: 100vmax;
+    height: auto;
     display: grid;
-    grid-template-columns:repeat(2, 50vw);
-    grid-template-rows:repeat(4, 15vh);  
+    grid-template-columns:repeat(2, 5fr);
+    grid-template-rows:repeat(4, 1fr);  
 }
 
 /* tradicion */
 .foot-t {
     background-color: #651c37;
     position: relative;
-    top: 100vh;
-    width: 100vw;
-    height: 100%;
+    top: 25vmin;
+    max-width: 100vmax;
+    height: auto;
     display: grid;
-    grid-template-columns:repeat(2, 50vw);
-    grid-template-rows:repeat(4, 15vh);  
+    grid-template-columns:repeat(2, 5fr);
+    grid-template-rows:repeat(4, 1fr);  
 }
 
 
@@ -150,11 +150,4 @@
     100% {
         filter: contrast(100%);
     }
-}
-
-.clip-line {
-    max-width: 20%;
-    max-height: 10px;
-    background-color: black;
-    clip-path: polygon(0 59%, 100% 59%, 100% 75%, 0 75%);
 }
